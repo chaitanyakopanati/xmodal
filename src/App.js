@@ -47,7 +47,7 @@ function App() {
     if (!formData.dob.trim()) {
       newErrors.dob = 'Date of Birth is required.';
     } else if (enteredDate > currentDate) {
-      alert('Invalid Date of Birth. Please enter a valid date.');
+      alert('Invalid Date of Birth. Date of Birth cannot be in the future.');
       return false;
     }
 
